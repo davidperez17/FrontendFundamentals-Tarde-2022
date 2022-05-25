@@ -1,0 +1,57 @@
+/* - White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.card {
+  width: 20%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.01) 0px 10px 10px -5px;
+  border-radius: 20px;
+  margin: 70px auto;
+  background-color: #fff;
+}
+
+.img {
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  margin-top: 20px;
+  width: 90%;
+  border-radius: 15px;
+}
+
+.texto {
+  width: 100%;
+  text-align: center;
+}
+
+.texto h2 {
+  margin: 20px 0;
+  font-family: "Outfit", sans-serif;
+  color: hsl(218, 44%, 22%);
+  font-size: 29px;
+}
+
+.texto p {
+  font-family: "Outfit", sans-serif;
+  color: hsl(220, 15%, 55%);
+  font-size: 19px;
+  padding-bottom: 50px;
+}
