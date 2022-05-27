@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>after</title>
+  <style>
+    .container {
+      width: 100%;
+      height: auto;
+
+      background-color: #000;
+      color: #fff;
+    }
+
+    .container::after {
+      position: absolute;
+      content: url(./arrow.png);
+
+      left: 50%;
+      top: 30px;
+    }
+
+    p::after {
+      content: "👽";
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat est laboriosam nulla corporis culpa eligendi
+      provident consequuntur fugiat. Dignissimos eius nam impedit perspiciatis consequatur illo et inventore nobis
+      nesciunt doloribus.</p>
+  </div>
+</body>
+
+</html>
