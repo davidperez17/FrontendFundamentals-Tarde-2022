@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    section {
+      width: 300px;
+      height: auto;
+
+      background-color: red;
+      margin: 20px;
+    }
+
+    h1 {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- Hijo 1 -->
+    <section>
+      <h1>Uno</h1>
+      <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio laboriosam impedit ea adipisci facere at
+        fugit. Asperiores consectetur delectus dolorum quae autem distinctio, necessitatibus nobis, voluptas doloribus
+        aliquam expedita perspiciatis?</h2>
+    </section>
+
+    <!-- Hijo 2 -->
+    <section>
+      <h1>Dos</h1>
+      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem at esse repudiandae dolores repellat,
+        molestiae, officiis aliquid possimus autem architecto, odio voluptatem quae explicabo. Molestias natus
+        voluptates eligendi ex praesentium?</h2>
+    </section>
+  </main>
+</body>
+
+</html>
