@@ -42,31 +42,42 @@ body {
   background-repeat: no-repeat;
 
   flex-direction: column;
+  gap: 70px;
+  padding: 120px;
 }
 
 .info {
   width: 100%;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 /* Texto */
 .texto {
-  width: 40%;
+  width: 30%;
+  font-family: var(--fontMain);
 }
 
 .texto > h1 {
   font-size: 5.5rem;
+  color: var(--VeryDarkMagenta);
+  font-weight: 700;
+  line-height: 50px;
 }
 
 .texto > p {
   font-size: 1.8rem;
+  color: var(--DarkGrayishMagenta);
+  font-weight: 500;
+
+  line-height: 25px;
+  margin-top: 25px;
 }
 
 .rating {
-  width: 500px;
+  width: 600px;
 
   display: flex;
   justify-content: center;
@@ -77,15 +88,15 @@ body {
 }
 
 .rating-items {
-  width: 400px;
-  height: 50px;
+  width: 500px;
+  height: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   border-radius: 10px;
-
   background-color: var(--LightGrayishMagenta);
+  font-family: var(--fontMain);
 }
 
 .rateItem-1 {
@@ -107,13 +118,78 @@ body {
 }
 
 .rating-items p {
-  width: 250px;
+  width: 300px;
 
-  text-align: left;
   font-size: 2rem;
   text-align: center;
+  color: var(--VeryDarkMagenta);
+  font-weight: 700;
 }
 /* Finalización texto */
+
+/* Testimonios */
+
+.testimonials {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonials div:nth-child(2) {
+  margin-top: 40px;
+}
+
+.testimonials div:nth-child(3) {
+  margin-top: 80px;
+}
+
+.card {
+  width: 350px;
+
+  padding: 35px;
+  background-color: var(--VeryDarkMagenta);
+  color: white;
+
+  font-family: var(--fontMain);
+  border-radius: 10px;
+}
+
+.user {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.user img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.user h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.user span {
+  color: var(--SoftPink);
+  font-weight: 500;
+}
+
+.card p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: justify;
+
+  line-height: 23px;
+}
 
 /* atibutos */
 .attribution {
