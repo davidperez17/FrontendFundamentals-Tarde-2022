@@ -17,46 +17,51 @@
 
     .container {
       width: 100%;
-      /* height: 600px; */
+      height: 600px;
       display: grid;
-      /* justify-content: center; */
 
-      grid-template-columns: repeat(4, 100px);
+      grid-template-columns: repeat(3, 100px);
       grid-template-rows: repeat(3, 100px);
 
-      /* grid-auto-flow: row; */
-      /* grid-auto-columns: 200px; */
-      grid-auto-rows: 100px;
-
-      /* column-gap: 20px;
-      row-gap: 20px; */
       border: 1px solid white;
+
+      /* align-content: center;
+      justify-content: space-around; */
+
+      place-content: center;
+
+      /* justify-items: center;
+      align-items: center; */
+
+      place-items: center;
 
       gap: 20px;
     }
 
     .container div {
+      width: 50px;
+      height: 50px;
       border: 1px solid white;
       /* background-color: #fff; */
     }
 
-    .items-1 {
-      /* width: 50px;
-      height: 50px; */
 
-      grid-column-start: 1;
-      grid-column-end: 3;
-
-      grid-row-start: 1;
-      grid-row-end: 3;
+    .items-1,
+    .items-4,
+    .items-7 {
+      place-self: center;
     }
 
-    .items-8 {
-      grid-column-start: 3;
-      grid-column-end: 5;
+    .items-6,
+    .items-9,
+    .items-3 {
+      place-self: end;
+    }
 
-      grid-row-start: 4;
-      grid-row-end: 2;
+    .items-2,
+    .items-5,
+    .items-8 {
+      place-self: start end;
     }
   </style>
 </head>
