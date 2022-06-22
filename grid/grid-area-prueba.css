@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60vw;
+  height: 90vh;
+
+  /* border: 1px solid; */
+
+  display: grid;
+  grid-template-areas:
+    "item-1 item-1 item-1 item-2 item-3"
+    "item-4 item-5 item-5 item-6 item-6"
+    "item-4 item-7 item-8 item-8 item-9"
+    "item-10 item-7 item-11 item-11 item-9"
+    "item-10 item-12 item-11 item-11 item-9"
+    "item-13 item-12 item-14 item-14 item-15"
+    "item-13 item-16 item-14 item-14 item-17";
+  gap: 10px;
+  /* align-items: flex-start; */
+}
+
+.container div {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  border-radius: 20px;
+  /* border: 1px solid; */
+}
+
+.item-1 {
+  grid-area: item-1;
+  background-color: rgb(34, 0, 255);
+}
+
+.item-2 {
+  grid-area: item-2;
+  background-color: rgba(34, 0, 255, 0.822);
+}
+
+.item-3 {
+  grid-area: item-3;
+  background-color: rgba(34, 0, 255, 0.54);
+}
+
+.item-4 {
+  grid-area: item-4;
+  background-color: rgb(0, 208, 255);
+}
+
+.item-5 {
+  grid-area: item-5;
+  background-color: rgba(0, 208, 255, 0.826);
+}
+
+.item-6 {
+  grid-area: item-6;
+  background-color: rgba(0, 208, 255, 0.536);
+}
+
+.item-7 {
+  grid-area: item-7;
+  background-color: rgba(0, 208, 255, 0.312);
+}
+
+.item-8 {
+  grid-area: item-8;
+  background-color: rgb(0, 255, 153);
+}
+.item-9 {
+  grid-area: item-9;
+  background-color: rgba(0, 255, 153, 0.814);
+}
+
+.item-10 {
+  grid-area: item-10;
+  background-color: rgba(0, 255, 153, 0.493);
+}
+
+.item-11 {
+  grid-area: item-11;
+  background-color: rgba(0, 60, 255, 0.493);
+}
+
+.item-12 {
+  grid-area: item-12;
+  background-color: rgb(0, 60, 255);
+}
+
+.item-13 {
+  grid-area: item-13;
+  background-color: rgba(0, 60, 255, 0.227);
+}
+
+.item-14 {
+  grid-area: item-14;
+  background-color: rgb(255, 0, 0);
+}
+
+.item-15 {
+  grid-area: item-15;
+  background-color: rgba(255, 0, 0, 0.584);
+}
+
+.item-16 {
+  grid-area: item-16;
+  background-color: rgba(255, 0, 0, 0.301);
+}
+
+.item-17 {
+  grid-area: item-17;
+  background-color: rgba(255, 0, 0, 0.203);
+}
