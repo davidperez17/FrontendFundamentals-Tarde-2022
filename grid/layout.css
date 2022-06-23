@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  gap: 20px;
+
+  text-align: center;
+  padding: 0 100px;
+}
+
+/* Nav */
+.nav {
+  width: 100%;
+  height: 70px;
+
+  grid-area: nav;
+  border-radius: 20px;
+
+  background-color: rgb(255, 94, 0);
+}
+/* Finalzia Nav */
+
+/* Main */
+.main {
+  width: 100%;
+  height: 1000px;
+
+  grid-area: main;
+
+  display: grid;
+  grid-template-areas:
+    "section-1 section-1 article article article"
+    "section-2 section-2 article article article"
+    "img img img img img"
+    "map map map map map";
+  gap: 10px;
+}
+
+section,
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+}
+
+.section-1 {
+  grid-area: section-1;
+  background-color: red;
+}
+.section-2 {
+  grid-area: section-2;
+  background-color: rgba(255, 0, 0, 0.736);
+}
+.article {
+  grid-area: article;
+  background-color: rgba(255, 0, 0, 0.525);
+}
+.images {
+  width: 100%;
+  grid-area: img;
+  background-color: rgba(255, 0, 0, 0.432);
+
+  display: flex;
+  justify-content: space-around;
+}
+.map {
+  grid-area: map;
+  background-color: rgba(255, 0, 0, 0.225);
+}
+/* Finaliza Main */
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 70px;
+
+  grid-area: footer;
+  border-radius: 20px;
+
+  background-color: rgba(255, 94, 0, 0.652);
+}
+/* Finaliza Footer */
