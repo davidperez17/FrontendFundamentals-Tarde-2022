@@ -27,8 +27,55 @@ body {
   grid-area: nav;
   border-radius: 20px;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
   background-color: rgb(255, 94, 0);
 }
+
+.nav-logo {
+  width: 70px;
+}
+
+.btn-1 {
+  width: 100px;
+  height: 40px;
+
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-1:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-2 {
+  width: 100px;
+  height: 40px;
+
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+
+  color: black;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-2:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
 /* Finalzia Nav */
 
 /* Main */
@@ -56,17 +103,48 @@ article {
   border-radius: 20px;
 }
 
+/* Section 1 */
 .section-1 {
   grid-area: section-1;
   background-color: red;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.section-p p {
+  width: 200px;
+  text-align: justify;
+}
+
+/* Finaliza Section 1 */
+
+/* Section 2 */
+
 .section-2 {
   grid-area: section-2;
   background-color: rgba(255, 0, 0, 0.736);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+/* Finaliza Section 2 */
+
 .article {
   grid-area: article;
   background-color: rgba(255, 0, 0, 0.525);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+  justify-content: center;
+  align-items: center;
+
+  align-content: space-evenly;
 }
 .images {
   width: 100%;
