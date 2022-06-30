@@ -1,0 +1,41 @@
+body {
+  grid-template-areas:
+    "header  "
+    "section-1"
+    "section-2"
+    "aside"
+    "footer";
+}
+
+.header {
+  background-color: blue;
+
+  background-image: url(https://images.unsplash.com/photo-1656501029164-d1fefd9689f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+.section-1 {
+  background-color: yellow;
+}
+
+.section-2 {
+  background-color: green;
+}
+
+.aside {
+  background-color: gray;
+}
+
+.footer {
+  background-color: pink;
+
+  flex-direction: column;
+}
+.footer img {
+  width: 35px;
+}
+
+section h2,
+p {
+  width: auto;
+  font-size: 1.2rem;
+}
