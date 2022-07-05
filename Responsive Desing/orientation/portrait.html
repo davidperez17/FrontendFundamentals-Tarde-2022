@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+
+      display: flex;
+      background-color: rgb(205, 203, 203);
+      gap: 20px;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container div {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      color: white;
+    }
+
+    /* Retrato */
+    /* @media screen and (orientation:portrait) and (max-width: 300px) {
+      .container {
+        flex-direction: column;
+      }
+    } */
+
+    /* Paisaje */
+    /* 
+    @media screen and (orientation:landscape) {
+      .container {
+        flex-direction: column;
+      }
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>Box-1</div>
+    <div>Box-2</div>
+    <div>Box-3</div>
+  </div>
+</body>
+
+</html>

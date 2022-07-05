@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>And</title>
+  <style>
+    .card {
+      width: 500px;
+      margin: 0 auto;
+
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: rgb(192, 192, 192);
+      overflow: hidden;
+
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+    }
+
+    .card .texto {
+      padding: 20px;
+    }
+
+    .texto h1 {
+      text-align: left;
+    }
+
+    .texto p {
+      text-align: justify;
+    }
+
+    /* Telefonos */
+    @media only screen and (min-width:320px) and (max-width:767px) {
+      .card {
+        width: 50%;
+        background-color: red;
+      }
+    }
+
+    /* Tables */
+    @media only screen and (min-width:768px) and (max-width:1023px) {
+      .card {
+        width: 70%;
+        background-color: green;
+      }
+    }
+
+    /* Ordenadores */
+    @media only screen and (min-width:1024px) {
+      .card {
+        width: 90%;
+        background-color: maroon;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img
+      src="https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      alt="Lago-Atitlan">
+    <div class="texto">
+      <h1>Card</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum velit ipsam et consequatur ea earum voluptatem?
+        Delectus, commodi? Amet quisquam quod rerum deleniti veritatis perferendis blanditiis eveniet architecto nihil
+        voluptate?</p>
+    </div>
+  </div>
+</body>
+
+</html>

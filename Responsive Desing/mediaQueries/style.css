@@ -1,0 +1,10 @@
+.container {
+  width: 300px;
+}
+img {
+  width: 100%;
+}
+.container h1,
+p {
+  font-size: 0.9rem;
+}
