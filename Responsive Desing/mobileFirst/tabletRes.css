@@ -1,0 +1,47 @@
+.nav-list a {
+  font-size: 2rem;
+}
+
+/* ---------- */
+
+.section-principal p {
+  font-size: 1.8rem;
+}
+
+/* ------------ */
+
+.sect-img .title {
+  font-size: 1.6rem;
+}
+
+.img-container {
+  flex-direction: row;
+}
+
+/* -------------- */
+.user .title-user {
+  font-size: 1.8rem;
+}
+
+.btn-container .login,
+.register {
+  font-size: 1.6rem;
+}
+
+/* ------------- */
+
+.footer .perfil {
+  width: 60px;
+  height: 60px;
+}
+
+.footer h2 {
+  font-size: 1.2rem;
+}
+
+/* ----------- */
+
+.scrollToTop {
+  width: 40px;
+  height: 40px;
+}

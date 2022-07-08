@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="(min-width: 768px)" href="tabletRes.css">
+  <link rel="stylesheet" media="(min-width: 1024px)" href="desktopRes.css">
   <title>Document</title>
 </head>
 
@@ -97,7 +99,21 @@
     <h2>©TODOS LOS DERECHOS RESERVADOS</h2>
   </footer>
 
+  <!-- Boton Scroll -->
+
+  <button id="btnScroll" class="scrollToTop"></button>
+
   <!-- --------------------------------- -->
+  <script>
+    const btnScroll = document.getElementById("btnScroll");
+
+    btnScroll.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+      });
+    })
+  </script>
 </body>
 
 </html>

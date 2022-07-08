@@ -20,7 +20,11 @@ html {
 
 body {
   width: 100vw;
+
+  max-width: 1920px;
   height: auto;
+
+  margin: 0 auto;
 
   display: grid;
   grid-template-areas:
@@ -85,7 +89,10 @@ body {
 
 .section-principal p {
   width: 100%;
-  max-width: 200px;
+
+  min-width: 100px;
+  max-width: 400px;
+
   font-size: 1.2rem;
   color: var(--mainColor);
 
@@ -94,7 +101,9 @@ body {
 
 .section-principal img {
   width: 100%;
-  max-width: 200px;
+
+  min-width: 100px;
+  max-width: 250px;
 }
 /*Finaliza Section Principal */
 
@@ -167,7 +176,9 @@ body {
 }
 
 .user .title-user {
-  width: 60%;
+  width: 80%;
+
+  max-width: 300px;
   height: 30px;
 
   margin: 20px auto 0;
@@ -188,7 +199,7 @@ body {
   width: 100%;
   height: auto;
 
-  margin-top: 35px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,10 +211,14 @@ body {
 .btn-container .login,
 .register {
   width: 80%;
+
+  max-width: 500px;
   height: 30px;
 
   border-radius: 30px;
   cursor: pointer;
+
+  font-family: var(--mainFont);
 }
 
 .btn-container .login {
@@ -246,7 +261,7 @@ body {
 
 .footer h2 {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
 
   height: 40px;
   background-color: rgb(0, 0, 0);
@@ -260,4 +275,23 @@ body {
   font-size: 0.9rem;
 
   border-radius: 30px;
+}
+
+/* btn Scroll */
+
+.scrollToTop {
+  width: 30px;
+  height: 30px;
+
+  background-image: url(up-arrow.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+
+  cursor: pointer;
+  border: none;
 }
