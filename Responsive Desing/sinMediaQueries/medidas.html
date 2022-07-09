@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .box {
+      /* Min, Ideal(max), Max */
+      width: clamp(200px, 50%, 400px);
+
+      /* width: 50%; */
+
+      /* Anchura Minima */
+      /* min-width: 200px; */
+
+      /* Anchura Maxima */
+      /* max-width: 400px; */
+
+
+      /* Min, Ideal(max), Max */
+      height: clamp(200px, 50%, 400px);
+
+      /* height: 50%; */
+
+      /* Altura Minima */
+      /* min-height: 200px; */
+
+      /* Alutara Maxima */
+      /* max-height: 400px; */
+
+      background-color: red;
+    }
+
+    p {
+      font-size: clamp(5px, 2vw, 20px);
+      /* font-size: 2vw; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <p>Feliz Tarde</p>
+  </div>
+</body>
+
+</html>

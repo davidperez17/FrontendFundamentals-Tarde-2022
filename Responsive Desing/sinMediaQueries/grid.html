@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 100%;
+
+      display: grid;
+      /* grid-template-columns: minmax(100px, 400px) minmax(50px, 300px) minmax(120px, 350px); */
+
+      /* grid-template-columns: repeat(3, minmax(150px, 400px)); */
+
+      /* Auto Fill */
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+      gap: 10px;
+    }
+
+    .container .box {
+      height: 200px;
+
+      background-color: red;
+    }
+
+    .container-2 {
+      margin-top: 10px;
+      width: 100%;
+
+      display: grid;
+
+      /* Auto Fit */
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+
+      gap: 10px;
+    }
+
+    .container-2 .box {
+      height: 200px;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <div class="container-2">
+    <div class="box"></div>
+    <div class="box"></div>
+
+  </div>
+</body>
+
+</html>
