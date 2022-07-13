@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOCSS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Estructura */
+    .container {
+      width: 600px;
+      height: auto;
+
+      margin: 0 auto;
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+    }
+
+    .button {
+      width: 100px;
+      height: 40px;
+    }
+
+    /* Piel */
+
+    .brd-1 {
+      border: 1px solid;
+    }
+
+    .bg-orange {
+      background-color: orange;
+    }
+
+    .bg-lightgreen {
+      background-color: lightgreen;
+    }
+
+    .bg-cream {
+      background-color: coral;
+    }
+
+    .bg-yellow {
+      background-color: yellow;
+    }
+
+    .bg-white {
+      background-color: white;
+    }
+
+    .pd-20 {
+      padding: 20px;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .gap {
+      gap: 10px;
+    }
+
+    .brdr-20 {
+      border-radius: 20px;
+    }
+
+    .h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .p {
+      text-align: justify;
+      font-size: 1.1rem;
+      color: white;
+    }
+
+    .button-1 {
+      background: red;
+      color: white;
+    }
+
+    .button-2 {
+      background: green;
+      color: white;
+    }
+
+    .button-3 {
+      background: black;
+      color: white;
+    }
+
+    .cl-black {
+      color: black;
+    }
+
+    .cl-white {
+      color: white;
+    }
+
+    .bg-green {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body class="bg-cream">
+  <div class="container bg-white pd-20 flex gap brdr-20">
+
+    <div class="card bg-lightgreen pd-20 flex flex-column brdr-20">
+      <h1 class="h1">Titulo</h1>
+      <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore distinctio iusto sint similique
+        ullam
+        dolorem ut illo tempora magnam voluptatem placeat aspernatur modi, quam aut dolor a quisquam impedit.</p>
+      <button class="button button-1">Más Info</button>
+    </div>
+
+    <div class="card bg-orange pd-20 flex flex-column brd-1 brdr-20">
+      <h1 class="h1">Titulo</h1>
+      <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore distinctio iusto sint similique
+        ullam
+        dolorem ut illo tempora magnam voluptatem placeat aspernatur modi, quam aut dolor a quisquam impedit.</p>
+      <button class="button button-3">Más Info</button>
+    </div>
+
+    <div class="card bg-yellow pd-20 brdr-20">
+      <h1 class="h1">Titulo</h1>
+      <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore distinctio iusto sint similique
+        ullam
+        dolorem ut illo tempora magnam voluptatem placeat aspernatur modi, quam aut dolor a quisquam impedit.</p>
+      <button class="button button-2">Más Info</button>
+    </div>
+
+  </div>
+  <!-- -------------------------------- -->
+  <div class="container flex flex-column">
+
+    <div class="card brd-1 bg-orange">
+      <h1 class="h1 bg-green">Titulo</h1>
+      <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore distinctio iusto sint similique
+        ullam
+        dolorem ut illo tempora magnam voluptatem placeat aspernatur modi, quam aut dolor a quisquam impedit.</p>
+      <button class="button button-2 brdr-20">Más Info</button>
+    </div>
+
+    <div class="card brd-1 bg-green">
+      <h1 class="h1 bg-orange">Titulo</h1>
+      <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore distinctio iusto sint similique
+        ullam
+        dolorem ut illo tempora magnam voluptatem placeat aspernatur modi, quam aut dolor a quisquam impedit.</p>
+      <button class="button button-2 brdr-20">Más Info</button>
+    </div>
+
+    <div class="card brd-1 bg-white">
+      <h1 class="h1 bg-lightgreen">Titulo</h1>
+      <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore distinctio iusto sint similique
+        ullam
+        dolorem ut illo tempora magnam voluptatem placeat aspernatur modi, quam aut dolor a quisquam impedit.</p>
+      <button class="button button-2 brdr-20">Más Info</button>
+    </div>
+
+    <div class="card brd-1 bg-lightgreen">
+      <h1 class="h1 bg-cream">Titulo</h1>
+      <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore distinctio iusto sint similique
+        ullam
+        dolorem ut illo tempora magnam voluptatem placeat aspernatur modi, quam aut dolor a quisquam impedit.</p>
+      <button class="button button-2 brdr-20">Más Info</button>
+    </div>
+
+  </div>
+</body>
+
+</html>
